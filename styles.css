@@ -240,3 +240,114 @@ h3 {
         padding: 10px 15px;
     }
 }
+/* --- ESTILOS PARA LA SECCIÓN DE CONTACTO Y FOOTER (Nueva) --- */
+
+.main-footer {
+    width: 100%;
+    background-color: #4a4a4a; /* Gris oscuro para el footer */
+    color: #f0f0f0;
+    margin-top: 60px;
+}
+
+.contacto-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para esta sección como en la imagen */
+    color: #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transform: translateY(-30px); /* Levanta un poco la sección sobre el fondo */
+}
+
+.contacto-titulo {
+    font-size: 1.8em;
+    color: #e59400; /* Color naranja/ámbar para el título (como el icono) */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contacto-descripcion {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.contacto-email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.email-icon {
+    font-size: 1.5em;
+    color: #e59400; /* Naranja/ámbar */
+    margin-right: 10px;
+}
+
+.contacto-email a {
+    color: #e59400; /* Naranja/ámbar para el enlace de email */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contacto-email a:hover {
+    color: #cc8400;
+}
+
+.contacto-redes {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.linkedin-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #000; /* Fondo negro para LinkedIn */
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* Estilos para el área legal del footer (parte oscura) */
+.footer-legal {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background-color: #4a4a4a;
+    color: #ccc;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.separator {
+    margin: 0 5px;
+    color: #999;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Ajuste del banner de cookies, ya que los enlaces están en el footer */
+.cookie-banner p {
+    margin: 0;
+    font-size: 0.9em;
+    /* QUITAMOS LOS ENLACES DEL TEXTO DEL BANNER */
+}
