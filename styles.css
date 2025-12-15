@@ -209,3 +209,34 @@ h3 {
 .cookie-banner button:hover {
     background-color: #6d84b4; /* Azul claro al pasar el ratón */
 }
+
+/* ESTILOS PARA EL BOTÓN FLOTANTE DE WHATSAPP */
+.whatsapp-button {
+    position: fixed;
+    bottom: 80px; /* Separado del banner de cookies (que está en bottom: 0) */
+    right: 20px;
+    background-color: #25D366; /* Verde oficial de WhatsApp */
+    color: white;
+    padding: 12px 18px;
+    border-radius: 30px; /* Forma redondeada/ovalada */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Justo debajo del banner de cookies */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Verde más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+}
+
+/* Ajuste para que el botón no se monte encima de la lista de verificación en móvil */
+@media (max-width: 768px) {
+    .whatsapp-button {
+        bottom: 70px; /* Un poco más arriba en móvil */
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+}
