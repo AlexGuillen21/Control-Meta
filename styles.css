@@ -166,4 +166,46 @@ h3 {
     .testimonios-container {
         flex-direction: column;
     }
+
+}
+/* ESTILOS PARA EL BANNER DE COOKIES Y PRIVACIDAD */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Fondo oscuro para contraste */
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: none; /* Oculto por defecto, el JS lo mostrará si es necesario */
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.cookie-banner a {
+    color: #bc2a8d; /* Color de acento de Instagram para los enlaces */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cookie-banner button {
+    background-color: #3b5998; /* Azul FB para el botón */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.cookie-banner button:hover {
+    background-color: #6d84b4; /* Azul claro al pasar el ratón */
 }
