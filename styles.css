@@ -1,4 +1,4 @@
-/* Colores definidos: #3b5998, #6d84b4, #bc2a8d, #ffffff */
+/* Colores: #3b5998 (Azul FB), #6d84b4 (Azul claro), #bc2a8d (Rosa IG), #ffffff (Blanco) */
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -22,87 +22,76 @@ h1 {
 }
 
 main {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
 h2 {
-    color: #3b5998;
-    border-bottom: 2px solid #6d84b4;
+    color: #bc2a8d; /* Rosa IG para el título del pack */
+    border-bottom: 2px solid #3b5998;
     padding-bottom: 5px;
     margin-top: 40px;
+    text-align: center;
 }
 
-.checklist {
-    text-align: left;
-    margin-bottom: 40px;
-}
-
-.checklist ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.checklist li {
-    background-color: #6d84b4; /* Azul claro */
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
+h3 {
+    color: #3b5998; /* Azul FB para el subtítulo */
+    margin-top: 30px;
 }
 
 .intro-text {
     text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    color: #3b5998;
+    font-size: 1.3em;
+    margin: 40px 0;
+    color: #6d84b4;
+    font-weight: 500;
 }
 
-/* Diseño de las tarjetas de servicio */
-.servicios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
-.servicio-card {
-    border: 1px solid #ddd;
-    padding: 20px;
+/* Sección del Pack */
+.pack-info {
+    border: 1px solid #6d84b4;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    background-color: #f8f8fb;
 }
 
-.servicio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.pack-description {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    max-width: 80%;
+    margin: 15px auto;
 }
 
-.servicio-card h3 {
-    color: #bc2a8d; /* Morado/Rosa Instagram */
-    font-size: 1.5em;
-    border-bottom: 2px solid #bc2a8d;
-    padding-bottom: 10px;
-    margin-top: 0;
+.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para la lista */
+    gap: 15px;
 }
 
-#bm-setup h3 { border-color: #3b5998; color: #3b5998; }
-#easy-ads h3 { border-color: #6d84b4; color: #6d84b4; }
-#feed-pro h3 { border-color: #bc2a8d; color: #bc2a8d; }
-
-.precio {
-    font-weight: bold;
-    color: #3b5998;
-    margin-top: 15px;
-    background-color: #f0f4f7;
-    padding: 10px;
+.checklist li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
     border-radius: 5px;
+    font-weight: normal;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.precio-final {
+    text-align: center;
+    font-size: 1.6em;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 /* Diseño de testimonios */
@@ -111,19 +100,22 @@ h2 {
     padding: 30px;
     background-color: #f7f7f7;
     border-radius: 10px;
+    text-align: center;
 }
 
 .testimonios h2 {
-    text-align: center;
     border-bottom: none;
+    color: #3b5998;
 }
 
 .testimonio-card {
     background-color: #ffffff;
     border-left: 5px solid #bc2a8d; /* Morado/Rosa */
     padding: 15px;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 600px;
     font-style: italic;
+    text-align: left;
 }
 
 .testimonio-card footer {
@@ -131,4 +123,5 @@ h2 {
     margin-top: 10px;
     color: #666;
     font-style: normal;
+    font-weight: bold;
 }
